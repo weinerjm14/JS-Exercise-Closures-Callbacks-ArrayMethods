@@ -93,7 +93,7 @@ xdescribe("processDuplicateFree() [STRETCH TASK]", () => {
   });
 });
 
-xdescribe("getFullNames()", () => {
+describe("getFullNames()", () => {
   it("returns an array of strings", () => {
     expect(getFullNames(runners).every(r => typeof r === 'string')).to.equal(true);
   });

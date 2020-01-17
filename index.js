@@ -181,10 +181,11 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
 */
 function getFullNames(runners) {
   
-  //  const newArray = {
-  //   runners.forEach(`${runners.last_name}, ${runners.first_name}`);
-  // }
-  // return newArray 
+   const newArray = [];
+   runners.forEach(runners => newArray.push(`${runners.last_name}, ${runners.first_name
+  }`));
+  
+  return newArray 
 }
 
 /**
@@ -232,8 +233,11 @@ function getRunnersByTShirtSize(runners, tSize) {
  * @param runners array of runners like the one inside the /data/runners.js file.
  * @returns a number which is the sum of the donations by all runners.
 */
-function tallyUpDonations(/* CODE HERE */) {
-  /* CODE HERE */
+function tallyUpDonations(runners) {
+  // let TotDonations = runners.donation.reduce(accum, curVal) {
+  //   return accum + curVal;
+  // }
+  // return TotDonations;
 }
 
 /////////////// CLOSURES ///////////////
