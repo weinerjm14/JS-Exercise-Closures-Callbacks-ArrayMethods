@@ -106,7 +106,7 @@ describe("getFullNames()", () => {
   });
 });
 
-xdescribe("firstNamesAllCaps()", () => {
+describe("firstNamesAllCaps()", () => {
   it("returns an array of strings", () => {
     expect(firstNamesAllCaps(runners).every(r => typeof r === 'string')).to.equal(true);
   });
