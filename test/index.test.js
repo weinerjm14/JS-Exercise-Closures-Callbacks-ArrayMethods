@@ -161,7 +161,7 @@ describe("counterMaker()", () => {
   });
 });
 
-xdescribe("counterMakerWithLimit()", () => {
+describe("counterMakerWithLimit()", () => {
   const counter = counterMakerWithLimit(3)
   it("returns a function", () => {
     expect(isFunction(counter)).to.equal(true);
