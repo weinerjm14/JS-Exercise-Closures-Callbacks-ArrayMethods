@@ -88,6 +88,8 @@ function processLastItem(list, callback) {
  * should return 1000.
 */
 function processSum(list, callback) {
+  let num = list.reduce((accum, curVal) => { return accum + curVal;}, 0);
+  return callback(num);
   
 }
 
@@ -261,9 +263,9 @@ function tallyUpDonations(runners) {
 */
 function counterMaker() {
   // BROKEN CODE STARTS
-  const count = 0;
-  function counter() {
-    ++count
+  let count = 0;
+  return function counter() {
+    return count++;
   }
   // BROKEN CODE ENDS
 }
