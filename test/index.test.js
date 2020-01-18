@@ -129,7 +129,7 @@ describe("getRunnersByTShirtSize()", () => {
   });
 });
 
-xdescribe("tallyUpDonations()", () => {
+describe("tallyUpDonations()", () => {
   it("returns 0 for an empty runners array", () => {
     expect(tallyUpDonations([])).to.equal(0);
   });
